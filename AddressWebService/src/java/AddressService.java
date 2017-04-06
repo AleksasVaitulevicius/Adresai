@@ -16,16 +16,11 @@ import java.util.Map;
  * @author Aleksas
  */
 public class AddressService implements IAddressService{
-    Map<Integer, AddressModel> DB;
-
-    public AddressService() {
-        this.DB = new HashMap<>();
-    }
+    Map<Integer, AddressModel> DB = new HashMap<>();
     
     @Override
     public void add(AddressModel model){
-        model.ID = DB.size();
-        DB.put(DB.size(), model);
+        DB.put(model.ID, model);
     }
     
     @Override
