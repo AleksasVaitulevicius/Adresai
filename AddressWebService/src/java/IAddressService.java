@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface IAddressService {
     public void add(AddressModel model);
-    public void delete(int id);
-    public AddressModel getSingle(int id);
+    public void delete(String id);
+    public AddressModel getSingle(String id);
     public List<AddressModel> getAll();
 }

@@ -16,7 +16,7 @@ import java.util.Map;
  * @author Aleksas
  */
 public class AddressService implements IAddressService{
-    Map<Integer, AddressModel> DB = new HashMap<>();
+    Map<String, AddressModel> DB = new HashMap<>();
     
     @Override
     public void add(AddressModel model){
@@ -24,12 +24,12 @@ public class AddressService implements IAddressService{
     }
     
     @Override
-    public void delete(int id){
+    public void delete(String id){
         DB.remove(id);
     }
     
     @Override
-    public AddressModel getSingle(int id){
+    public AddressModel getSingle(String id){
         return DB.get(id);
     }
 

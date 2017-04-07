@@ -14,13 +14,17 @@ import java.io.Serializable;
 public class AddressModel implements Serializable{
 
 	private static final long serialVersionUID = -5577579081118070434L;
-        public int ID;
+        public String ID;
         public String country;
         public String city;
         public String street;
-        public int buildingNr;
-        public int flatNr;
-        public int ZIPCode;
+        public String buildingNr;
+        public String flatNr;
+        public String ZIPCode;
+        
+        public AddressModel(String ID, String country, String city, String street, String buildingNr, String flatNr, String ZIPCode){
+            
+        }
         
         @Override
         public String toString(){
