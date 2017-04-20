@@ -1,0 +1,10 @@
+IAddressService.class
+AddressService.class
+ResidentController.class
+ResidentService.class
+AddressModel.class
+AddressResponse.class
+AddressController.class
+ResidentModel.class
+IResidentService.class
+ResidentResponse.class
